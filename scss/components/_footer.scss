@@ -3,9 +3,18 @@
     background-color: var(--color-dark);
     
     &-container {
-        display: flex;
-        align-items: baseline;
-        gap: 93px;
+            display: flex;
+            align-items:baseline;
+            justify-content: space-around;          
+            flex-wrap: wrap;
+            gap: 60px; 
+            text-align: center;
+                              
+        
+        @media (min-width: 1200px) {
+            gap: 93px;             
+            text-align: justify;                      
+        }
     }
 
     &__title {
@@ -16,6 +25,11 @@
         text-transform: uppercase;
         color: var(--color-invert);
         margin-bottom: 20px;
+        text-align: center;
+
+         @media (min-width: 1200px) {
+           text-align: left;                         
+        }
     }
 }
     

@@ -1,12 +1,17 @@
 .address {
     margin-top: 20px;
+    
   
     &__contacts {
-        margin-top: 9px;
-        margin-bottom: 6px;
+        margin-top: 8px;
+                
+        @media (min-width: 1200px) {
+            margin-top: 9px;           
+         }
     }
     
     &__link {
+        display: block;
         color: var(--color-main);
         text-decoration: none;
         font-style: normal;

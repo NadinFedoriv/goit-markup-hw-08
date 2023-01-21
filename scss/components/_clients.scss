@@ -2,16 +2,28 @@
        
     &__title {
         @extend %title;
+
+        @media (max-width: 1199px) {
+            font-size: 28px;
+            line-height: calc(32 / 28);
+            margin-bottom: 30px;
+        }
     }
 
     &__list {
         @extend %flex-centered;
         gap: 30px;
+        flex-wrap: wrap;
+                       
+        @media (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+        
     }
 
     &__item {
         height: 92px;
-        width: 170px;
+        width: 170px;     
     }
     
     &__link {

@@ -2,10 +2,23 @@
 
     &__list {
         @extend %list-flex;
+        flex-wrap: wrap;
+
+        @media (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__item {
-    width: calc((100% - 30px) / 4);
+        width: 100%;
+        @media (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+          }
+          
+        @media (min-width: 1200px) {
+            width: calc((100% - 30px) / 4);
+            flex-wrap: nowrap;
+        }
     }
 
     &__icon {
@@ -27,5 +40,9 @@
 
     &__subtitle {
         @extend %subtitle;
+              
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
 }
