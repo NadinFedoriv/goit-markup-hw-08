@@ -1,0 +1,31 @@
+%flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+%list-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    }
+
+  %title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+    margin-bottom: 50px;
+  }
+  
+  %subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-title);
+    margin-bottom: 10px;
+  }

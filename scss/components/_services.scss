@@ -1,0 +1,35 @@
+.services{
+    padding-top: 0;
+    padding-bottom: 94px;
+
+    &__list {
+        @extend %list-flex;
+    }
+  
+    &__item {
+        position: relative;
+    }
+
+    &__title {
+        @extend %title;
+    }
+    
+    &__label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 27px 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color-invert);
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+
+
